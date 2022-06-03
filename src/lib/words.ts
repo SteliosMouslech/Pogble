@@ -90,7 +90,7 @@ export const getWordOfDay = () => {
   nextDay.setDate(today.getDate() + 1)
 
   return {
-    solution: localeAwareUpperCase(WORDS[index % WORDS.length]),
+    solution: localeAwareUpperCase(WORDS[0]),
     solutionIndex: index,
     tomorrow: nextDay.valueOf(),
   }
